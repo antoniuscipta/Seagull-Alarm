@@ -19,6 +19,16 @@ body,html{
     align-items: center;
 }
 
+#datetoday{
+    font-family: 'Inconsolata', monospace;
+    font-size: 50px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #gull{
     display: flex;
     flex-direction: column;
@@ -36,12 +46,12 @@ body,html{
 }
 
 #clock{
-    font-family: 'Orbitron', sans-serif;
-    font-size: 15vw;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 100px;
     background-image: linear-gradient(180deg,
-     rgba(99,253,136,1) 0%,
-      rgba(51,197,142,1) 50%,
-       rgba(39,97,116,1) 100%);
+     rgb(255, 255, 255) 0%,
+      rgb(255, 255, 255) 50%,
+       rgb(255, 255, 255) 100%);
        background-clip: text;
        -webkit-background-clip: text;
        -moz-background-clip: text;
