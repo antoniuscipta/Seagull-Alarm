@@ -12,7 +12,7 @@ function updateTime(){
     const minutes = formatTime(date.getMinutes());
     const seconds = formatTime(date.getSeconds());
 
-    document.getElementById('datetoday').innerHTML = days[date.getDay()]+","+date.getDate()+'-'+(date.getMonth()+1)+'-'+date.getFullYear();
+    document.getElementById('datetoday').innerHTML = "It's " + days[date.getDay()]+", "+date.getDate()+'-'+(date.getMonth()+1)+'-'+date.getFullYear();
     display.innerText=`${hour} : ${minutes} : ${seconds}`;
 }
 
@@ -57,4 +57,7 @@ function clearAlarm(){
     alert('Alarm Cleared. Good morning and Have a nice day! :) -Seagull');
 }
 
+function socialMedia(){
+    alert("Link page coming Soon!");
+}
 setInterval(updateTime, 1000);
