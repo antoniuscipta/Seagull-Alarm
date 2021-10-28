@@ -10,4 +10,4 @@ MANUAL GUIDANCE :
 UPDATE :
 - Changed the ringtone into "YOASOBI - Racing into The Night (Ryox Remix)" (https://www.youtube.com/shorts/QnhFSQCT8qE)
 - Adjusted the UI layout
-- Adding 'Contact Me' button
+- Added 'Contact Me' button
