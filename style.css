@@ -28,6 +28,7 @@ body,html{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 10px;
 }
 
 #datetoday{
@@ -97,4 +98,10 @@ body,html{
 
 .my-socmed{
     background-color:rgb(43, 150, 43);
+}
+
+#wakeuptext{
+    font-family: 'Inconsolata', monospace;
+    font-size: 30px;
+    color: white;
 }

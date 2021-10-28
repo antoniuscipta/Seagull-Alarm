@@ -12,18 +12,19 @@
 </head>
 <body>
     <section class ="container">
+        <div id = "wakeuptext">Wakey wakey</div>
         <div id = "gull">
-            <img src="./assets/gullpng.png" alt="" width="180px" height="150px">
+            <img src="./assets/gullpng.png" alt="" width="190px" height="160px">
         </div>
-        <div id = "whoalarm">Epic Seagull Alarm</div>
+        <div id = "whoalarm">Seagull Alarm ⏰</div>
         <div id = "credit">by Antonius Cipta</div>
         <div id = "datetoday"></div>
-        <div id ="clock"></div>
+        <div id = "clock"></div>
         <input onchange="setAlarmTime(this.value)" name="alarmTime" type="datetime-local">
         <div class = "controls">
-            <button onclick="setAlarm()" class="button set-alarm"> Set Alarm </button>
-            <button onclick="clearAlarm()" class="button clear-alarm"> Clear Alarm </button>
-            <button onclick="socialMedia()" class = "button my-socmed"> Contact me </button>
+            <button onclick="setAlarm()" class="button set-alarm"> Set Alarm ✅</button>
+            <button onclick="clearAlarm()" class="button clear-alarm"> Clear Alarm ⛔</button>
+            <button onclick="socialMedia()" class = "button my-socmed"> Contact me 📞</button>
         </div>
     </section>
     <script src="index.js"></script>

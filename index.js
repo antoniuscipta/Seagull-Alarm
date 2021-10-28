@@ -1,5 +1,6 @@
 const display = document.getElementById('clock');
-const audio = new Audio('./assets/Ram-Ranch.mp3');
+document.getElementById('wakeuptext').hidden=true;
+const audio = new Audio('./assets/ritn-ryoxremix.mp3');
 audio.loop = true;
 let alarmTime = null;
 let alarmTimeout = null;
@@ -38,13 +39,26 @@ function setAlarm(){
 
         if(timeToAlarm > current){
             const timeout = timeToAlarm.getTime() - current.getTime();
-            alarmTImeon = setTimeout(() => audio.play(), timeout);
+            alarmTimeon = setTimeout(() => audio.play(), timeout);
 
             if(hour < 1){
                 alert(`Alarm set for ${minutes} Minutes ! -Seagull`);
-            }else 
+            }else
                 alert(`Alarm set for ${hour} Hours ${minutes} Minutes ! -Seagull`);
         }
+    }
+}
+
+function wakeuptexttimer(){
+    // the alarm indicator somehow not working
+    if(alarmTimeout){
+        // const curr = new Date();
+        // const timer = new Date(alarmTime);
+        // if(timer = curr){
+            wakeuptext.hidden=false;
+            // const timeout = timer.getTime() - curr.getTime();
+            // wakey = setTimeout(() => wakeuptext.hidden=false, timeout);
+        // }
     }
 }
 
@@ -54,10 +68,11 @@ function clearAlarm(){
     if(alarmTimeout){
         clearTimeout(alarmTimeout);
     }
+    wakeuptext.hidden=true;
     alert('Alarm Cleared. Good morning and Have a nice day! :) -Seagull');
 }
 
 function socialMedia(){
-    alert("Link page coming Soon!");
+    alert("Link page coming Soon! 🦆");
 }
 setInterval(updateTime, 1000);
