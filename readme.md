@@ -8,6 +8,6 @@ MANUAL GUIDANCE :
 3. When alarm is ringing, select Clear alarm to stop
 
 UPDATE :
-- Changed the ringtone from "GRANT MACDONALD - Ram Ranch" into "YOASOBI - Racing into The Night (Ryox Remix)" (https://www.youtube.com/shorts/QnhFSQCT8qE)
+- Changed the ringtone into "YOASOBI - Racing into The Night (Ryox Remix)" (https://www.youtube.com/shorts/QnhFSQCT8qE)
 - Adjusted the UI layout
 - Adding 'Contact Me' button
