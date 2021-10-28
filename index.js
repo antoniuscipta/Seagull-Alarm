@@ -12,7 +12,7 @@ function updateTime(){
     const minutes = formatTime(date.getMinutes());
     const seconds = formatTime(date.getSeconds());
 
-    document.getElementById('datetoday').innerHTML = days[date.getDay()]+","+date.getDate()+'-'+(date.getMonth()+1)+'-'+date.getYear();
+    document.getElementById('datetoday').innerHTML = days[date.getDay()]+","+date.getDate()+'-'+(date.getMonth()+1)+'-'+date.getFullYear();
     display.innerText=`${hour} : ${minutes} : ${seconds}`;
 }
 
