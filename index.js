@@ -40,6 +40,8 @@ function setAlarm(){
         if(timeToAlarm > current){
             const timeout = timeToAlarm.getTime() - current.getTime();
             alarmTimeon = setTimeout(() => audio.play(), timeout);
+            // realized that I didn't understand what is setTimeout method
+            alarmTimeon2 = setTimeout(() => {wakeuptext.hidden=false}, timeout);
 
             if(hour < 1){
                 alert(`Alarm set for ${minutes} Minutes ! -Seagull`);
@@ -48,25 +50,6 @@ function setAlarm(){
         }
     }
 }
-
-const wakeuptexttimer = setInterval(function(){
-    //tried using countdown method but didnt work 
-    const countDownDate = new Date(alarmTime).getTime();
-    const now = new Date().getTime();
-    const distance = countDownDate - now;
-
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    if(days <= 0 && hours <= 0 && minutes <= 0 && seconds <= 0){
-        wakeuptext.hidden=false;
-    }
-    if (distance < 0) {
-        clearInterval(wakeuptexttimer);
-      }
-},1000)
 
 function clearAlarm(){
     audio.pause();

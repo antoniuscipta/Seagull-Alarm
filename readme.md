@@ -7,7 +7,10 @@ MANUAL GUIDANCE :
 2. Set your wake up time, then select Set Alarm
 3. When alarm is ringing, select Clear alarm to stop
 
-UPDATE :
+Update 1.1:
+- Added Alarm Indicator (Wakey wakey!)
+
+UPDATE 1:
 - Changed the ringtone into "YOASOBI - Racing into The Night (Ryox Remix)" (https://www.youtube.com/shorts/QnhFSQCT8qE)
 - Adjusted the UI layout
 - Added 'Contact Me' button
