@@ -33,7 +33,7 @@ function setAlarm(){
     if(alarmTime){
         const current = new Date();
         const timeToAlarm = new Date(alarmTime);
-
+        
         const hour = formatTime(timeToAlarm.getHours() - current.getHours());
         const minutes = formatTime(timeToAlarm.getMinutes() - current.getMinutes());
 
@@ -49,18 +49,24 @@ function setAlarm(){
     }
 }
 
-function wakeuptexttimer(){
-    // the alarm indicator somehow not working
-    if(alarmTimeout){
-        // const curr = new Date();
-        // const timer = new Date(alarmTime);
-        // if(timer = curr){
-            wakeuptext.hidden=false;
-            // const timeout = timer.getTime() - curr.getTime();
-            // wakey = setTimeout(() => wakeuptext.hidden=false, timeout);
-        // }
+const wakeuptexttimer = setInterval(function(){
+    //tried using countdown method but didnt work 
+    const countDownDate = new Date(alarmTime).getTime();
+    const now = new Date().getTime();
+    const distance = countDownDate - now;
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    if(days <= 0 && hours <= 0 && minutes <= 0 && seconds <= 0){
+        wakeuptext.hidden=false;
     }
-}
+    if (distance < 0) {
+        clearInterval(wakeuptexttimer);
+      }
+},1000)
 
 function clearAlarm(){
     audio.pause();
