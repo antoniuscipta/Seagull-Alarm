@@ -7,6 +7,9 @@ MANUAL GUIDANCE :
 2. Set your wake up time, then select Set Alarm
 3. When alarm is ringing, select Clear alarm to stop
 
+Update 1.2:
+- Added Background
+
 Update 1.1:
 - Added Alarm Indicator (Wakey wakey!)
 

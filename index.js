@@ -42,7 +42,6 @@ function setAlarm(){
             alarmTimeon = setTimeout(() => audio.play(), timeout);
             // realized that I didn't understand what is setTimeout method
             alarmTimeon2 = setTimeout(() => {wakeuptext.hidden=false}, timeout);
-
             if(hour < 1){
                 alert(`Alarm set for ${minutes} Minutes ! -Seagull`);
             }else
